@@ -22,15 +22,15 @@ make
 ##Usage:
 ```
 mccc [-D] [-Ffilter/order/f1[/f2]] [-Ctmark/t1/t2] [-v] sac_files
--D: Remean traces
--C: window data [tmark+t1,tmark+t2]
-    mark = -5(b), -3(o), -2(a), 0(t0)
--F: Fiter traces
-    filter = [bp|hp|lp]
-    order = filter order
-    if [hp|lp] specified f1 is the corner freq.
-    if [bp] specified f1 f2 are the corner freq.
--v: Print file name at corr-correlation
+    -D: Remean traces
+    -C: window data [tmark+t1,tmark+t2]
+        mark = -5(b), -3(o), -2(a), 0(t0)
+    -F: Fiter traces
+        filter = [bp|hp|lp]
+        order = filter order
+        if [hp|lp] specified f1 is the corner freq.
+        if [bp] specified f1 f2 are the corner freq.
+    -v: Print file name at corr-correlation
 ```
 The program will creat a "tdel.dat" file with three columes:
 
