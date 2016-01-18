@@ -1,13 +1,12 @@
 CC = gcc
-LIBS = -lm -lsac -lsacio -L/usr/local/sac/lib -lfftw3
-INCLUDE = -I/usr/local/sac/include
+LIBS = -lm -lsac -lsacio -lfftw3
+SACINC = -I/usr/local/sac/include
+SACLIB = -L/usr/local/sac/lib 
 
 all: mccc
 
-BIN = ./
-
 mccc:  mccc.c sacio.c detrend.c
-	${CC} -o $@ $^ ${INCLUDE} ${LIBS}
+	${CC} -o $@ $^ ${SACINC} ${LIBS} ${SACLIB}
 
 clean:
-	rm *.o mccc
+	rm mccc
