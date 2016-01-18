@@ -19,7 +19,7 @@ cd mccc
 make
 ```
 
-##Usage:
+##Usage
 ```
 mccc [-D] [-Ffilter/order/f1[/f2]] [-Ctmark/t1/t2] [-v] sac_files
     -D: Remean traces
