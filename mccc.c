@@ -6,7 +6,7 @@
  * 	Author:  Mijian Xu
  *
  *  History:
- *      17/01/2000	Initial coding
+ *      17/01/2016	Initial coding
 ***********************************/
 #include <stdio.h>
 #include <string.h>
