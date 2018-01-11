@@ -1,25 +1,25 @@
-#mccc
+# mccc
 Function MCCC determines optimum relative delay times for a set of seismograms based on the VanDecar & Crosson multi-channel cross-correlation algorithm.
 
-##Installation
-###Dependence
+## Installation
+### Dependence
 * SAC
 * fftw3
 
-###Modify Makefile
+### Modify Makefile
 Specify the directories of SAC library in these lines:
 ```Makefile
 SACINC = -I/usr/local/sac/include
 SACLIB = -L/usr/local/sac/lib 
 ```
 
-###Compile Codes 
+### Compile Codes 
 ```Bash
 cd mccc
 make
 ```
 
-##Usage
+## Usage
 ```
 mccc [-D] [-Ffilter/order/f1[/f2]] [-Ctmark/t1/t2] [-v] sac_files
     -D: Remean traces
